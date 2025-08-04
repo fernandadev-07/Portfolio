@@ -9,6 +9,7 @@ import { FaInstagram, FaLinkedin, FaGithub, FaSun, FaMoon } from "react-icons/fa
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -172,11 +173,13 @@ export default function Home() {
             Quer conversar comigo? Me chama no e-mail ou nas redes sociais!
           </p>
           <a
-            href="mailto:fernanda.antunes@seedabit.org.br"
-            className="inline-block bg-[#f9c9d4] text-[#333] dark:text-white px-6 py-3 rounded-full font-semibold hover:bg-[#f7a7bb] transition"
-          >
-            Enviar e-mail
-          </a>
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=fernanda.antunes@seedabit.org.br"
+           target="_blank"
+           rel="noopener noreferrer"
+           className="inline-block bg-[#f9c9d4] text-[#333] dark:text-white px-6 py-3 rounded-full font-semibold hover:bg-[#f7a7bb] transition"
+>
+  Enviar e-mail
+</a>
 
           <div className="flex justify-center space-x-6 mt-8 text-3xl">
             <a
@@ -209,3 +212,5 @@ export default function Home() {
     </>
   );
 }
+
+

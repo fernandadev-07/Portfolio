@@ -30,10 +30,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* IMPORTANTE: slick-carousel precisa ser importado por último */
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
