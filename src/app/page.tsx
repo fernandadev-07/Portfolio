@@ -172,7 +172,7 @@ export default function Home() {
             Quer conversar comigo? Me chama no e-mail ou nas redes sociais!
           </p>
           <a
-            href="mailto:seuemail@email.com"
+            href="mailto:fernanda.antunes@seedabit.org.br"
             className="inline-block bg-[#f9c9d4] text-[#333] dark:text-white px-6 py-3 rounded-full font-semibold hover:bg-[#f7a7bb] transition"
           >
             Enviar e-mail
