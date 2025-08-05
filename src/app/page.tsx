@@ -19,6 +19,7 @@ export default function Home() {
     } else {
       document.documentElement.classList.remove('dark');
     }
+    console.log(`Modo escuro ${darkMode ? 'ativado' : 'desativado'}`);
   }, [darkMode]);
 
   return (
@@ -36,7 +37,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className="bg-white dark:bg-[#0a0a0a] text-[#333] dark:text-[#ededed] min-h-screen font-inter scroll-smooth transition-colors duration-500">
+      <main>
         {/* MENU FIXO */}
         <nav className="fixed top-0 w-full bg-[#f9c9d4] dark:bg-[#1a1a1a] border-b border-[#f7a7bb] dark:border-[#2a2a2a] z-50 shadow-sm transition-colors duration-500">
           <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -62,7 +63,7 @@ export default function Home() {
             {/* Título do Header com mesma fonte e estilo que "Sobre Mim" */}
             <h2 className="text-4xl font-bold mb-6 font-inter">
               <span className="text-[#f17da1]">Olá,</span>{' '}
-              <span className="text-[#333333] dark:text-[#ededed]">eu sou a Fernanda!</span>
+              <span className="dark:text-blue-500">eu sou a Fernanda!</span>
             </h2>
             <p className="text-lg leading-relaxed">
               Sou estudante de Licenciatura em Computação com formação técnica em Análise e Desenvolvimento de Sistemas. Estou me desenvolvendo na área de tecnologia, com foco em projetos que unem organização, criatividade e propósito. Iniciando minha carreira com vontade de aprender, crescer e fazer a diferença. Tenho interesse especial por ambientes que envolvem{' '}
@@ -146,8 +147,8 @@ export default function Home() {
                     className="rounded-lg object-cover mb-4"
                     priority
                   />
-                  <h3 className="text-xl font-bold mb-2 font-inter">{projeto.titulo}</h3>
-                  <p className="text-center">{projeto.descricao}</p>
+                  <h3 className="text-black text-xl font-bold mb-2 font-inter ">{projeto.titulo}</h3>
+                  <p className="text-black text-center">{projeto.descricao}</p>
                   <a
                     href={projeto.github}
                     target="_blank"
